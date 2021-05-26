@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: minhee-python-demo-service
+spec:
+  selector:
+    app: minhee-python-demo
+  ports:
+  - protocol: "TCP"
+    port: 6000
+    targetPort: 8000
+  type: LoadBalancer

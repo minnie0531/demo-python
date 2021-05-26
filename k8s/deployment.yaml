@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minhee-python-demo
+spec:
+  selector:
+    matchLabels:
+      app: minhee-python-demo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: minhee-python-demo
+    spec:
+      containers:
+      - name: python-demo
+        image: minnie0531/python-demo:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
