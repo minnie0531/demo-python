@@ -6,3 +6,4 @@ commonAnnotations:
 resources:
   - deployment.yaml
   - service.yaml
+  - route.yaml
