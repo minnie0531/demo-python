@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: minhee-dev2
+namespace: minhee-dev
 commonAnnotations:
   self-demo: "true"
 resources:
